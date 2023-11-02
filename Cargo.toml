@@ -1,0 +1,13 @@
+[package]
+name = "reportip"
+version = "1.0.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+anyhow = "1.0.75"
+axum = { version = "0.6.20", default-features = false, features = ["http1", "tokio"] }
+tokio = { version = "1.33.0", features = ["rt"] }
+tracing = { version = "0.1.40", default-features = false, features = ["std"] }
+tracing-subscriber = { version = "0.3.17", default-features = false, features = ["std", "fmt", "json", "registry", "smallvec", "time"] }
